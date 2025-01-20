@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Tamanhos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Guia de Tamanhos</h1>
+    <p>Preencha as informações abaixo para encontrar o seu tamanho ideal:</p>
+
+    <form id="sizeForm">
+      <label for="altura">Altura (cm):</label>
+      <input type="number" id="altura" placeholder="Ex: 170" required>
+
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" placeholder="Ex: 70" required>
+
+      <label for="barriga">Estrutura Corporal - Barriga:</label>
+      <select id="barriga" required>
+        <option value="magra">Magra</option>
+        <option value="neutra">Neutra</option>
+        <option value="cheia">Cheia</option>
+      </select>
+
+      <label for="ombros">Estrutura Corporal - Ombros:</label>
+      <select id="ombros" required>
+        <option value="estreitos">Estreitos</option>
+        <option value="neutros">Neutros</option>
+        <option value="largos">Largos</option>
+      </select>
+
+      <button type="submit">Encontrar Meu Tamanho</button>
+    </form>
+
+    <div id="resultado" class="resultado">
+      <!-- O resultado será exibido aqui -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
